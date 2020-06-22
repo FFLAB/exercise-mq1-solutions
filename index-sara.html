@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>The Bill Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1 {text-align: center;}
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+
+        .card{
+            background-color: #afa9a9;
+            text-align: center;
+        }
+
+        /*  GRID  */
+
+        .uno{
+            grid-area: card1;
+        }
+        .due{
+            grid-area: card2;
+        }
+        .tre{
+            grid-area: card3;
+        }
+        .quattro{
+            grid-area: card4;
+        }
+        .cinque{
+            grid-area: card5;
+        }
+        .sei{
+            grid-area: card6;
+        }
+        .sette{
+            grid-area: card7;
+        }
+        .otto{
+            grid-area: card8;
+        }
+
+
+        .card-container {
+            display: grid;
+            grid-template-areas: "card1""card2""card3""card4"
+            "card5""card6""card7""card8";
+            grid-gap: 20px;
+
+        }
+
+        /* GRID per il desktop */
+
+        @media (min-width: 1000px) {
+            .card-container {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-areas:
+                    "card1 card2 card3 card4"
+                    "card5 card6 card7 card8"
+                ;
+                grid-gap: 20px;
+            }
+        }
+
+        /* GRID per il tablet */
+
+        @media (min-width: 700px) and (max-width: 999px) {
+            .card-container {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas:
+                    "card1 card2 card3" 
+                    "card4 card5 card6"
+                    "card7 card8 card8" 
+                ;
+                grid-gap: 20px;
+            }
+        }
+
+        /* GRID per il tablet.1 */
+
+        @media (max-width: 699px) {
+            .card-container {
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas:
+                    "card1 card2" 
+                    "card3 card4"
+                    "card5 card6" 
+                    "card7 card8"
+                ;
+                grid-gap: 20px;
+            }
+            
+        }
+
+        /* GRID per il mobile */
+
+        @media (max-width: 499px) {
+            .card-container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "card1" 
+                    "card2" 
+                    "card3" 
+                    "card4"
+                    "card5" 
+                    "card6" 
+                    "card7" 
+                    "card8"
+                ;
+                grid-gap: 20px;
+            }
+        }
+        /* aggiungi il css necessario per realizzare una grid a 4 colonne, 2 colonne a seconda del */
+    </style>
+</head>
+
+<body>
+    <h1>The Bill Grid</h1>
+    <div class="card-container">
+        <div class="card uno">
+            <div class="card-img">
+                <img src="https://www.fillmurray.com/g/500/500"
+                    alt="">
+            </div>
+            <div class="card-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat minus quo quas porro itaque rem
+                    nobis perferendis voluptates facilis dolorem.</p>
+            </div>
+            <div class="card-title">
+                <h3>Bill is Bill</h3>
+            </div>
+        </div>
+
+        <div class="card due">
+            <div class="card-img">
+                <img src="https://www.fillmurray.com/g/500/500"
+                    alt="">
+            </div>
+            <div class="card-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat minus quo quas porro itaque rem
+                    nobis perferendis voluptates facilis dolorem.</p>
+            </div>
+            <div class="card-title">
+                <h3>Bill is Bill</h3>
+            </div>
+        </div>
+
+
+   
+        <div class="card tre">
+            <div class="card-img">
+                <img src="https://www.fillmurray.com/g/500/500"
+                    alt="">
+            </div>
+            <div class="card-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat minus quo quas porro itaque rem
+                    nobis perferendis voluptates facilis dolorem.</p>
+            </div>
+            <div class="card-title">
+                <h3>Bill is Bill</h3>
+            </div>
+        </div>
+
+
+
+        <div class="card quattro">
+            <div class="card-img">
+                <img src="https://www.fillmurray.com/g/500/500"
+                    alt="">
+            </div>
+            <div class="card-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat minus quo quas porro itaque rem
+                    nobis perferendis voluptates facilis dolorem.</p>
+            </div>
+            <div class="card-title">
+                <h3>Bill is Bill</h3>
+            </div>
+        </div>
+
+        <div class="card cinque">
+            <div class="card-img">
+                <img src="https://www.fillmurray.com/g/500/500"
+                    alt="">
+            </div>
+            <div class="card-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat minus quo quas porro itaque rem
+                    nobis perferendis voluptates facilis dolorem.</p>
+            </div>
+            <div class="card-title">
+                <h3>Bill is Bill</h3>
+            </div>
+        </div>
+
+        <div class="card sei">
+            <div class="card-img">
+                <img src="https://www.fillmurray.com/g/500/500"
+                    alt="">
+            </div>
+            <div class="card-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat minus quo quas porro itaque rem
+                    nobis perferendis voluptates facilis dolorem.</p>
+            </div>
+            <div class="card-title">
+                <h3>Bill is Bill</h3>
+            </div>
+        </div>
+
+
+   
+        <div class="card sette">
+            <div class="card-img">
+                <img src="https://www.fillmurray.com/g/500/500"
+                    alt="">
+            </div>
+            <div class="card-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat minus quo quas porro itaque rem
+                    nobis perferendis voluptates facilis dolorem.</p>
+            </div>
+            <div class="card-title">
+                <h3>Bill is Bill</h3>
+            </div>
+        </div>
+
+
+
+        <div class="card otto">
+            <div class="card-img">
+                <img src="https://www.fillmurray.com/g/500/500"
+                    alt="">
+            </div>
+            <div class="card-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat minus quo quas porro itaque rem
+                    nobis perferendis voluptates facilis dolorem.</p>
+            </div>
+            <div class="card-title">
+                <h3>Bill is Bill</h3>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>
